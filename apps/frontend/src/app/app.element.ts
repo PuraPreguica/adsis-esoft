@@ -62,7 +62,7 @@ provider.add(Service, HttpService, [API_TOKEN]);
  * Faça um teste, remove a ! do env.production logo
  * ali abaixo, salve e veja a mudança na tela
  *                     aqui👇 */
-const UserServiceConcrete = !env.production ? UserDataService : UserMockService;
+const UserServiceConcrete = env.production ? UserDataService : UserMockService;
 provider.add(UserService, UserServiceConcrete, [Service]);
 
 /**

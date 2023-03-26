@@ -11,6 +11,10 @@ const USERS_MOCK: User[] = [
     id: 1,
     name: 'Erick Mock',
   },
+  {
+    id: 2,
+    name: 'Jorge Mock',
+  },
 ];
 
 export class UserMockService implements UserService {
